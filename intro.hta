@@ -1,0 +1,234 @@
+<HTML>
+<HEAD>
+<HTA:APPLICATION ID="RWBintro" APPLICATIONNAME="RajaiCruzer" BORDER="none" CAPTION="yes" maximizeButton="no" minimizeButton="no" SHOWINTASKBAR="no" SINGLEINSTANCE="no" SYSMENU="no" VERSION="1.0" WINDOWSTATE="normal">
+<TITLE>iCruzer</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+window.resizeTo(640,500);
+var width=window.screen.availWidth;
+var height=window.screen.availHeight;
+window.moveTo((width-640)/2,(height-500)/2);
+
+userAgent = window.navigator.userAgent;
+browserVers = parseInt(userAgent.charAt(userAgent.indexOf("/")+1),10);
+function findElement(n,ly) {
+	if (browserVers < 4)		return document[n];
+	var curDoc = ly ? ly.document : document;
+	var elem = curDoc[n];
+	if (!elem) {
+		for (var i=0;i<curDoc.layers.length;i++) {
+			elem = findElement(n,curDoc.layers[i]);
+			if (elem) return elem;
+		}
+	}
+	return elem;
+}
+
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+function changeImages() {
+	if (document.images) {
+		var img;
+		for (var i=0; i<changeImages.arguments.length; i+=2) {
+			img = null;
+			if (document.layers) {
+				img = findElement(changeImages.arguments[i],0);
+			}
+			else {
+				img = document.images[changeImages.arguments[i]];
+			}
+			if (img) {
+				img.src = changeImages.arguments[i+1];
+			}
+		}
+	}
+}
+
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		Intro_02_Intro_03_over = newImage("images/Intro_02-Intro_03_over.gif");
+		Intro_03_over = newImage("images/Intro_03-over.gif");
+		Intro_04_Intro_05_over = newImage("images/Intro_04-Intro_05_over.gif");
+		Intro_05_over = newImage("images/Intro_05-over.gif");
+		Intro_06_Intro_07_over = newImage("images/Intro_06-Intro_07_over.gif");
+		Intro_07_over = newImage("images/Intro_07-over.gif");
+		Intro_08_Intro_07_over = newImage("images/Intro_08-Intro_07_over.gif");
+		preloadFlag = true;
+	}
+}
+
+
+function setup()
+{
+var b=new ActiveXObject("WScript.Shell");
+window.close();
+b.Run("setup.exe");
+b=null;
+}
+
+function docu()
+{
+var c=new ActiveXObject("WScript.Shell");
+window.close();
+c.Run("presentation.pps");
+c=null;
+}
+
+function closea()
+{
+window.close();
+}
+
+// -->
+</SCRIPT>
+<STYLE TYPE="text/css">
+<!--
+BODY{
+border:0px;
+}
+embed{
+position:absolute;
+left:-0px;
+top:-25px;
+}
+#Intro-01 {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:640px;
+	height:456px;
+}
+
+#Intro-02 {
+	position:absolute;
+	left:0px;
+	top:456px;
+	width:20px;
+	height:44px;
+}
+
+#Intro-03 {
+	position:absolute;
+	left:20px;
+	top:456px;
+	width:177px;
+	height:35px;
+}
+
+#Intro-04 {
+	position:absolute;
+	left:197px;
+	top:456px;
+	width:42px;
+	height:44px;
+}
+
+#Intro-05 {
+	position:absolute;
+	left:239px;
+	top:456px;
+	width:177px;
+	height:35px;
+}
+
+#Intro-06 {
+	position:absolute;
+	left:416px;
+	top:456px;
+	width:34px;
+	height:44px;
+}
+
+#Intro-07 {
+	position:absolute;
+	left:450px;
+	top:456px;
+	width:174px;
+	height:35px;
+}
+
+#Intro-08 {
+	position:absolute;
+	left:624px;
+	top:456px;
+	width:16px;
+	height:44px;
+}
+
+#Intro-09 {
+	position:absolute;
+	left:20px;
+	top:491px;
+	width:177px;
+	height:9px;
+}
+
+#Intro-10 {
+	position:absolute;
+	left:239px;
+	top:491px;
+	width:177px;
+	height:9px;
+}
+
+#Intro-11 {
+	position:absolute;
+	left:450px;
+	top:491px;
+	width:174px;
+	height:9px;
+}
+
+-->
+</STYLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" ONLOAD="preloadImages();" scroll=no bgColor="black" oncontextmenu="return false;" onselectstart="return false;">
+<!-- ImageReady Slices (Untitled-1) -->
+<DIV ID="Intro-01">
+	<IMG SRC="images/Intro_01.gif" WIDTH="640" HEIGHT="456"></DIV>
+<DIV ID="Intro-02">
+	<IMG NAME="Intro_02" SRC="images/Intro_02.gif" WIDTH="20" HEIGHT="44"></DIV>
+<DIV ID="Intro-03">
+	<A HREF="#"
+		OnClick=docu()
+		ONMOUSEOVER="changeImages('Intro_02', 'images/Intro_02-Intro_03_over.gif', 'Intro_03', 'images/Intro_03-over.gif'); return true;"
+		ONMOUSEOUT="changeImages('Intro_02', 'images/Intro_02.gif', 'Intro_03', 'images/Intro_03.gif'); return true;">
+		<IMG NAME="Intro_03" SRC="images/Intro_03.gif" WIDTH="177" HEIGHT="35" BORDER="0"></A></DIV>
+<DIV ID="Intro-04">
+	<IMG NAME="Intro_04" SRC="images/Intro_04.gif" WIDTH="42" HEIGHT="44"></DIV>
+<DIV ID="Intro-05">
+	<A HREF="#"
+		OnClick=setup()
+		ONMOUSEOVER="changeImages('Intro_04', 'images/Intro_04-Intro_05_over.gif', 'Intro_05', 'images/Intro_05-over.gif'); return true;"
+		ONMOUSEOUT="changeImages('Intro_04', 'images/Intro_04.gif', 'Intro_05', 'images/Intro_05.gif'); return true;">
+		<IMG NAME="Intro_05" SRC="images/Intro_05.gif" WIDTH="177" HEIGHT="35" BORDER="0"></A></DIV>
+<DIV ID="Intro-06">
+	<IMG NAME="Intro_06" SRC="images/Intro_06.gif" WIDTH="34" HEIGHT="44"></DIV>
+<DIV ID="Intro-07">
+	<A HREF="#"
+		OnClick=closea()
+		ONMOUSEOVER="changeImages('Intro_06', 'images/Intro_06-Intro_07_over.gif', 'Intro_07', 'images/Intro_07-over.gif', 'Intro_08', 'images/Intro_08-Intro_07_over.gif'); return true;"
+		ONMOUSEOUT="changeImages('Intro_06', 'images/Intro_06.gif', 'Intro_07', 'images/Intro_07.gif', 'Intro_08', 'images/Intro_08.gif'); return true;">
+		<IMG NAME="Intro_07" SRC="images/Intro_07.gif" WIDTH="174" HEIGHT="35" BORDER="0"></A></DIV>
+<DIV ID="Intro-08">
+	<IMG NAME="Intro_08" SRC="images/Intro_08.gif" WIDTH="16" HEIGHT="44"></DIV>
+<DIV ID="Intro-09">
+	<IMG SRC="images/Intro_09.gif" WIDTH="177" HEIGHT="9"></DIV>
+<DIV ID="Intro-10">
+	<IMG SRC="images/Intro_10.gif" WIDTH="177" HEIGHT="9"></DIV>
+<DIV ID="Intro-11">
+	<IMG SRC="images/Intro_11.gif" WIDTH="174" HEIGHT="9"></DIV>
+
+<embed src="vega.wmv" loop=0 autostart=true showcontrols=0 width=640 height=470 /><br>
+
+</BODY>
+</HTML>

@@ -1,0 +1,32 @@
+RCZ 1.0 ; first line defines the header and version information of RCZ
+; This is a sample for Raja CruZer (RCZ) scripting/programming language
+
+DEBUG 1 
+PRINT Welcome to raja networks lexor testing
+PRINT Program will tend to move robot :-
+
+FORWARD ; forward command
+BACKWARD ; backward command
+LEFT ; left 
+RIGHT ; right
+
+WAIT 500 ; waits for 500 milli seconds
+PRINT Closing application
+
+; Below, a sample for looping
+LIMIT 2
+PRINT This is a loop
+INC 0 1
+LOOP
+
+ADDR 1 100
+LIMIT 50
+;Make a sound of 1000Hz frequency, for 1 sec
+;PRINT sound
+SOUND ADDR 1 50
+INC 0 1
+INC 1 100
+LOOP
+
+;send 2 instruction
+SET 2

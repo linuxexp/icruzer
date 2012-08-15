@@ -1,0 +1,14 @@
+RCZ 1.0
+
+PRINT RCZ Sound Sample
+
+ADDR 1 20 ; Set address 1 to 20 
+LIMIT 50 ; loop for 10 times
+SOUND ADDR 1 50 ; synt sound of freq in addr 1 for 50ms
+INC 0 1 ; increment addr 0 by 1, addr 0 is the limit value
+INC 1 10 ;increment addr 1 by 10, the freq incremented by 10
+LOOP ; repeat
+
+PRINT RCZ Sound Sample END
+
+ 

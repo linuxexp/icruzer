@@ -1,0 +1,74 @@
+This was a project that I did for CBSE National Science Exhibition while in school, 
+it was one of the winning projects in competition.
+
+* At that time I just started exploring linux, so linux support pretty much basic.
+
+Copyright
+----------------------------------------------------------------------------------
+(c) Raja Jamwal
+
+The project comes bundles with few dependencies and libraries which were meant for
+hassle free installation and usage, this includes
+
+Audio, video decoders and encoders, mostly from FFMPEG project
+Microsoft SAPI redistributable
+Microsoft C\C++ Runtime installer\redistributale
+Open-CV
+
+I don't own anything from these programs, All trademarks and copyrights are property 
+of their respective owners. 
+
+=========================================================================
+Presentation.ppt file accompanying is the presentation file, tested
+with Open Office and MS office, although the embed wmv video object
+willn't work on linux OSes and OpenOffice.
+
+Read me for iCruzer i386  -:- x86 Windows Build
+----------------Tested on windows xp sp2 on i686 microprocessor architect
+-------------------------------------------------------------------------
+		Administrator privelages are absolutely required!
+-------------------------------------------------------------------------
+
+** The BUZZ program shortcut on the desktop doesn't work out of the 
+box, this happens due to wrong set Active directory of the program..
+change it through, right click >> start in director >> "set it to installed directory"
+
+or you could use the application from the installed directory.
+
+1) Open intro.hta : the setup menu for the program
+
+2) Click "Setup iCruzer", follow on screen intruction to install program
+
+	the setup program will install required dependecies, shared resources
+	etc, in backgroud it will fork the vcredist_x86.exe : the standard 
+	c\c++ runtime component installer,
+
+	The program will also add a windows shell extension for .RCZ extension
+
+	At last the program will copy the required files to the setup directory
+	and will execute the iCruzer configurer "config.exe", this will
+	install or execute the SAPI 5.1 redistributables, actually through
+	executing respective SAPI MSM , windows Merge modules.
+
+3) Finish the setup...
+
+Due to continued developing and testing...the setup of the program may be old
+in that case copy the file in the "UPDATE" folder to the setup directory.
+
+===========================================================================================
+Read me for iCruzer i386  -:- x86 linux Build
+----Tested on Ubuntu 9.04 Jaunty Jacalope on i686 microprocessor architect
+-------------------------------------------------------------------------
+		Administrator privelages are absolutely required!
+-------------------------------------------------------------------------
+
+The folder "linux" includes the linux binaries for the linux platform...
+Due to time constraint complete port of the program for the linux
+platform isn't avaialble...
+although, the linux port includes the core things, the project uses
+this includes the icruzer i386 linux driver, rcz, buzz, irover....
+
+=========
+* Voice recognition may not be too reliable, you need to train the software more.
+The more you train, the better the reliability.
+
