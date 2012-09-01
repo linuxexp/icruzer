@@ -1,0 +1,3 @@
+#define FILE_RECOVERY 0191
+#define IDD_APP 1000
+#define IDC_DISPLAY 1001

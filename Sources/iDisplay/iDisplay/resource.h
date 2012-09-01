@@ -1,0 +1,44 @@
+#ifndef IDC_STATIC
+#define IDC_STATIC (-1)
+#endif
+
+#define IDC_FILENAME                            89
+#define IDR_MENU1                               100
+#define IDD_ABOUT                               102
+#define IDB_BITMAP1                             104
+#define IDD_HELP                                106
+#define IDD_VIDEO                               109
+#define IDC_CHECKBOX1                           1000
+#define IDD_APP                                 1000
+#define IDC_DISPLAY                             1001
+#define IDC_EDIT1                               1001
+#define IDC_RANDOM                              1003
+#define IDC_X                                   1004
+#define IDC_SLIDER1                             1005
+#define IDC_CHECKBOX3                           1006
+#define IDC_SLIDER2                             1007
+#define IDC_CHECKBOX4                           1008
+#define IDC_CHECKBOX5                           1009
+#define IDC_3D                                  1010
+#define IDC_SOURCE                              1010
+#define IDC_SPEED                               1011
+#define IDC_TUR1                                1013
+#define IDM_ABOUT1                              40001
+#define IDC_Y                                   40002
+#define IDM_HELP1                               40002
+#define IDC_THRES                               40005
+#define IDC_LASER                               40008
+#define IDC_STATUS                              40009
+#define IDC_MOUSE                               40010
+#define IDC_FORWARD                             40011
+#define IDC_BACKWARD                            40012
+#define IDC_RIGHT                               40013
+#define IDC_LEFT                                40014
+#define IDC_HELP1                               40015
+#define IDC_RECO                                40016
+#define IDC_SR                                  40017
+#define IDC_RESUME                              40018
+#define IDC_PAUSE                               40019
+#define IDC_VOL                                 40020
+#define IDC_RATE                                40021
+#define IDC_TUR2                                40022

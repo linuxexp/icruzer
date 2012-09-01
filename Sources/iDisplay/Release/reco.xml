@@ -1,0 +1,19 @@
+<!-- 
+	Copyright (C) Raja 2010, All Rights reserved
+
+		Cruzer's Speech recognizer's grammer
+-->
+<GRAMMAR> 
+<RULE ID="1" Name="Cruzer" TOPLEVEL="ACTIVE">
+<L PROPNAME="commands">
+<P VALSTR="ABOUT">about</P>
+<P VALSTR="HELLO">hello</P>
+<P VALSTR="YES">yes</P>
+<P VALSTR="HELP">help</P>
+<P VALSTR="UP">up</P>
+<P VALSTR="DOWN">down</P>
+<P VALSTR="LEFT">left</P>
+<P VALSTR="RIGHT">right</P>
+</L>
+</RULE>
+</GRAMMAR>

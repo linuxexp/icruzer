@@ -1,0 +1,86 @@
+
+
+
+       --------------------------------------------------------------------
+
+				iCruzer i386
+
+				  by Raja
+
+       --------------------------------------------------------------------
+
+
+HELP :-:
+
+iCruzer i386 is a multipurpose robotics application or project, designed
+independantly by Raja. iCruzer is divided in following modules :-
+
+iDisplay : The hardware-software interface, visual displayer, renderer,
+face recognizer, visual FX.
+
+iSpeak : The text to speech and speech recognition engine of iCruzer.
+Following is the content of the current iSpeak or robot grammar.
+
+About : - Brings the about dialog
+Hello : - Recognizes a hello
+yes   : - Yes, variable use
+help  : - Brings this help
+up    : - Moves the robot forward
+down  : - Moves the robot backward
+left  : - Moves left
+right : - Moves right
+
+RCZ : Raja Cruzer script/programming language is the scripting/programming
+language that can be used to program cruzer and similar projects.
+Following is the structure of the RCZ file. RCZ is an pure text file.
+Example of a RCZ file :-
+
+RCZ 1.0 ; first line defines the header and version information of RCZ
+; This is a sample for Raja CruZer (RCZ) scripting/programming language
+
+DEBUG 1 
+PRINT Welcome to raja networks lexor testing
+PRINT Program will tend to move robot :-
+
+FORWARD ; forward command
+BACKWARD ; backward command
+LEFT ; left 
+RIGHT ; right
+
+WAIT 500 ; waits for 500 milli seconds
+PRINT Closing application
+
+; Below, a sample for looping
+LIMIT 2
+PRINT This is a loop
+INC 0 1
+LOOP
+
+ADDR 1 100
+LIMIT 50
+;Make a sound of 1000Hz frequency, for 1 sec
+;PRINT sound
+SOUND ADDR 1 50
+INC 0 1
+INC 1 100
+LOOP
+
+;send 2 instruction
+SET 2
+
+
+----------CAMERA Compatibility----------------------------
+Any camera or webcam supporting following hardware-software specifications
+can be used by iCruzer as a video input,
+WIA (Windows Image Acquistion), WDM (Windows Driver Model), 
+VFW (Video for windows), DirectX
+* iCruzer supports more than webcams or camera.
+
+----------FACE detection----------------------------------
+face detection is done by matching positive and negative images with blocks
+of the images captured from camera.
+
+----------3D Face-----------------------------------------
+3D face option uses the face detection to calculate x,y coordinate of
+the face in the environment and then it align the view according to it.
+
